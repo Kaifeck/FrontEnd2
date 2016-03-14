@@ -1,0 +1,10 @@
+<h1>A few Songs by the musical genius of Scooter</h1>
+
+<p>We hope you find this selection great</p>
+
+{{#each model as |hits|}}
+    <h2>{{hits.title}}</h2>
+    <p>Wiki: <a href="{{hits.link}}">Link</a></p>
+    <p>Lyrical Snippet: {{hits.lyric}}</p>
+{{/each}}
+{{outlet}}
