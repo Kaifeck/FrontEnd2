@@ -3,7 +3,13 @@
     <p>{{hit.title}}</p>
     <h4>link:</h4>
     <p>{{hit.link}}</p>
-    <h4>Lyric:</h4>
-    <p>{{hit.lyric}}</p>
-    <br>
+  {{#if showLyrics}}
+            <h4>Lyric:</h4>
+            <p>{{hit.lyric}}</p>
+            <br>
+            <button {{action "lyricHide"}}>Hide Lyric</button>
+  {{else}}
+            <h4>Lyric</h4>
+            <button {{action "lyricShow"}}>Show Lyric</button>
+  {{/if}}
 </div>
