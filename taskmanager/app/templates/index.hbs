@@ -1,0 +1,6 @@
+{{filter-bar filteredList=filteredList
+autoComplete=(action 'autoComplete') search=(action 'search')}}
+{{#each model as |taskList|}}
+  {{single-task task=taskList}}
+{{/each}}
+{{outlet}}
